@@ -18,6 +18,8 @@ function reiniciarComponentes() {
 }
 
 function exportarRuta(){
-    $.post()
+    $.post("http://www.gpsvisualizer.com/convert_input?convert_format=gpx",function(response,status){
+        
+    });
 }
 

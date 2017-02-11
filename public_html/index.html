@@ -37,9 +37,8 @@
                 <li><a id="imprimir" href="#">Imprimir</a></li>
             </ul>
         </header>
-        <div class="container-fluid">
-            <div
-                class="col-xs-12 col-sm-3 col-md-3 col-lg-3 panel panel-default pull-left">
+        <div id="body" class="container-fluid">
+            <div id="div_info" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 panel panel-default pull-left">
                 <div id="informacion" class="panel-body">
                     <div id="distancia">
                         <span>Distancia total:</span> <span id="distancia_value">0 Km</span>
@@ -55,14 +54,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 panel panel-default pull-right">
+            <div id="div_mapa" class="col-xs-12 col-sm-9 col-md-9 col-lg-9 panel panel-default pull-right">
                 <input id="origin-input" class="controls" type="text"
                        placeholder="Desde" /> <input id="destination-input"
                        class="controls" type="text" placeholder="Hasta" />
                 <div id="mapa"></div>
             </div>
             <div id="elevation_chart"></div>
-
         </div>
     </body>
 </html>

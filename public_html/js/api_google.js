@@ -114,11 +114,12 @@ function route(origin_place_id, destination_place_id, travel_mode) {
     }, function (response, status) {
         if (status === google.maps.DirectionsStatus.OK) {
             directionsDisplay.setDirections(response);
+            
             // Guardamos las coordenadas en BeanRuta
-            var iniLat = response.routes.legs[0].steps.start_location.lat;
-            var iniLon = response.routes.legs[0].steps.start_location.lng;
-            var finLat = response.routes.legs[0].steps.end_location.lat;
-            var finLon = response.routes.legs[0].steps.end_location.lng;
+           // var iniLat = response.routes.legs[0].steps.start_location.lat;
+           // var iniLon = response.routes.legs[0].steps.start_location.lng;
+           // var finLat = response.routes.legs[0].steps.end_location.lat;
+           // var finLon = response.routes.legs[0].steps.end_location.lng;
             //guardaCoordenadas(iniLat, iniLon, finLat, finLon);
 
         } else {
